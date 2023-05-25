@@ -773,6 +773,7 @@ recipe Clean Diaper
         Result:HCDiaper,
         Time:40.0,
         Category:Health,
+        OnTest:Recipe.OnTest.NotTaintedWater,
     	OnGiveXP:HCDoctor_OnGiveXP,
     }
 
@@ -796,6 +797,30 @@ recipe Disinfect Menstrual Pad
     	OnGiveXP:HCDoctor_OnGiveXP,
     }
 
+recipe Disinfect Menstrual Pad
+    {
+        destroy HCMenstrualpad,
+        WaterPot;5,
+        CanBeDoneFromFloor:true,
+        Result:HCMenstrualpadAlcohol,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+		OnGiveXP:HCDoctor_OnGiveXP,
+    }
+
+recipe Disinfect Menstrual Pad
+    {
+        destroy HCMenstrualpad,
+        WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
+        Result:HCMenstrualpadAlcohol,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+		OnGiveXP:HCDoctor_OnGiveXP,
+    }
+
 recipe Clean Menstrual Pad
     {
         HCMenstrualpadDirty,
@@ -803,6 +828,7 @@ recipe Clean Menstrual Pad
         Result:HCMenstrualpad,
         Time:40.0,
         Category:Health,
+        OnTest:Recipe.OnTest.NotTaintedWater,
     	OnGiveXP:HCDoctor_OnGiveXP,
     }
 

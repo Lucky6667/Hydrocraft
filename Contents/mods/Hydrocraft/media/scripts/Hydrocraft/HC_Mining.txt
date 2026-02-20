@@ -1027,6 +1027,17 @@ recipe Sift Dirt
     OnGiveXP:HCPlantScavenging_OnGiveXP,
     }
 
+recipe Sift Dirt by Hand
+{
+    Hydrocraft.HCDirt,
+    Result:Hydrocraft.HCDirt,
+    Time:500,
+    Category:Survivalist,
+    OnCreate:HCSiftDirtHand,
+    RemoveResultItem:true,
+    OnGiveXP:HCPlantScavenging_OnGiveXP,
+}
+
 recipe Shovel Clay
     {
         keep HCQuarrystone2,

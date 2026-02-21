@@ -1,3 +1,4 @@
 # Hydrocraft
 Hydrocraft for Project Zomboid
-Discord Server: https://discord.gg/hUMsjfApUt
+
+Forked from robotex140/Hydrocraft

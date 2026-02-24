@@ -812,7 +812,7 @@ recipe Make Tailor's Workbench
         Notebook=3,
         HCWorkbench,
         HCSpinningwheel,
-        HCBoneneedle,
+        Needle/HCBoneneedle,
         KnittingNeedles,
         HCMeasuringtape,
         [Recipe.GetItemTypes.Scissors],
@@ -1281,6 +1281,17 @@ recipe Make Ripped Sheets
         Result:RippedSheets=8,
         Sound:PZ_ClothesRipping,
         Time:100.0,
+        Category:Tailoring,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+recipe Make Sheet
+    {
+        RippedSheets=8,
+        Thread=2,
+        keep Needle/HCBoneneedle,
+        Result:Sheet,
+        Time:500.0,
         Category:Tailoring,
         OnGiveXP:Recipe.OnGiveXP.None,
     }
@@ -1951,7 +1962,7 @@ recipe Reinforce Pants
 
 recipe Stitch Silk Shirt
     {
-        keep Needle,
+        keep Needle/HCBoneneedle,
         keep HCTailoringbench2,
         Thread=8,   
         Result:HCSilkshirt,

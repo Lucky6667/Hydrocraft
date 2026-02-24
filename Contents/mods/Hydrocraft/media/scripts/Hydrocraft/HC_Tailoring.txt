@@ -1247,7 +1247,6 @@ recipe Make Silk Cloth
         OnGiveXP:HCTailoring_OnGiveBitXP,
     }
 
-
 recipe Make Long Silk Undies
     {
         SkillRequired:Tailoring=2,
@@ -1264,8 +1263,6 @@ recipe Make Long Silk Undies
     }
 
 
-
-/*
 recipe Make Sheet Rope
     {
         HCCottoncloth/HCLinencloth/HCWoolcloth/HCSilkcloth/HCWoolshirt/HCWoolpants/HCSilkshirt/HCSilkpants/HCLinenshirt/HCLinenpants,
@@ -1295,7 +1292,6 @@ recipe Make Sheet
         Category:Tailoring,
         OnGiveXP:Recipe.OnGiveXP.None,
     }
-*/
 
 recipe Make Thin Rope
     {

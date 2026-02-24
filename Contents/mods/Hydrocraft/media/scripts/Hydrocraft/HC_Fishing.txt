@@ -252,18 +252,8 @@ module Hydrocraft
     recipe Make Fishing Rod
     {
         WoodenStick,
-        Twine=2,
-        HCFishhookcopper/HCFishhooktin/HCFishhookbronze/HCFishhookiron/HCFishhooksteel/HCFishhookaluminum/HCFishhookbone,
-        keep [Recipe.GetItemTypes.SharpKnife],
-        Result:CraftedFishingRod,
-        Time:80.0,
-        Category:Fishing,
-        NeedToBeLearn:true,
-    }
-    recipe Make Fishing Rod
-    {
-        WoodenStick,
-        FishingLine=2,
+        Twine/FishingLine,
+        Twine/FishingLine,
         HCFishhookcopper/HCFishhooktin/HCFishhookbronze/HCFishhookiron/HCFishhooksteel/HCFishhookaluminum/HCFishhookbone,
         keep [Recipe.GetItemTypes.SharpKnife],
         Result:CraftedFishingRod,
@@ -274,19 +264,10 @@ module Hydrocraft
     recipe Fix Fishing Rod
     {
         FishingRodBreak,
-        Twine=2,
+        Twine/FishingLine,
+        Twine/FishingLine,
         HCFishhookcopper/HCFishhooktin/HCFishhookbronze/HCFishhookiron/HCFishhooksteel/HCFishhookaluminum/HCFishhookbone,
         Result:FishingRodTwineLine,
-        Time:80.0,
-        Category:Fishing,
-        NeedToBeLearn:true,
-    }
-    recipe Fix Fishing Rod
-    {
-        FishingRodBreak,
-        FishingLine=2,
-        HCFishhookcopper/HCFishhooktin/HCFishhookbronze/HCFishhookiron/HCFishhooksteel/HCFishhookaluminum/HCFishhookbone,
-        Result:FishingRod,
         Time:80.0,
         Category:Fishing,
         NeedToBeLearn:true,
@@ -305,17 +286,8 @@ module Hydrocraft
     recipe Repair Fishing Kit
     {
         HCFishingkitbroken,
-        Twine=2,
-        Result:HCFishingkitline,
-        Time:500,
-        NeedToBeLearn:true,
-        Category:Fishing,
-        OnGiveXP:HCFishing_OnGiveXP,
-    }
-    recipe Repair Fishing Kit
-    {
-        HCFishingkitbroken,
-        FishingLine=2,
+        Twine/FishingLine,
+        Twine/FishingLine,
         Result:HCFishingkitline,
         Time:500,
         NeedToBeLearn:true,

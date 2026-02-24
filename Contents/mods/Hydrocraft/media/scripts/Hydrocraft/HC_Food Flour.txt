@@ -816,6 +816,42 @@ recipe Dry Yeast
     OnGiveXP:HCCooking_OnGiveXP,
     }
 
+recipe Soak Acorn
+     {
+       	SkillRequired:Cooking=4,
+       	Acorn/HCAcorn,
+       	Water=1,
+    	CanBeDoneFromFloor:true,
+       	Result:HCAcornsoaked=1,
+       	Time:30,
+       	Category:Cooking,
+       	OnGiveXP:HCCooking_OnGiveXP,
+     }
+
+recipe Soak Acorn
+     {
+       	SkillRequired:Cooking=4,
+       	Acorn=24,
+       	Water=10,
+    	CanBeDoneFromFloor:true,
+       	Result:HCAcornsoaked=24,
+       	Time:300,
+       	Category:Cooking,
+       	OnGiveXP:HCCooking_OnGiveXP,
+     }
+
+recipe Soak Acorn
+     {
+       	SkillRequired:Cooking=4,
+       	HCAcorn=24,
+       	Water=10,
+    	CanBeDoneFromFloor:true,
+       	Result:HCAcornsoaked=24,
+       	Time:300,
+       	Category:Cooking,
+       	OnGiveXP:HCCooking_OnGiveXP,
+     }
+
 recipe Grind Acorn Flour
      {
        	SkillRequired:Cooking=5,

@@ -1,7 +1,7 @@
 Tooltip_TR = {
 
-	Tooltip_HCArmor = "Hangi zırhı giydiğinizi görmek için P tuşuna basın.",
-	Tooltip_HCBluebarrelcorpse = "Zehirli atığa dönüşecektir.",
-	Tooltip_HCFeedme = "Canlı tutmak için besleyin.",
-	Tooltip_HCSleep = "Kullanmak için yere bırakın.",
+	Tooltip_HCArmor = "Hangi zÄ±rhÄ± giydiÄŸinizi gÃ¶rmek iÃ§in P tuÅŸuna basÄ±n.",
+	Tooltip_HCBluebarrelcorpse = "Zehirli atÄ±ÄŸa dÃ¶nÃ¼ÅŸecektir.",
+	Tooltip_HCFeedme = "CanlÄ± tutmak iÃ§in besleyin.",
+	Tooltip_HCSleep = "Kullanmak iÃ§in yere bÄ±rakÄ±n.",
 }

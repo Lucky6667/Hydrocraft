@@ -1,18 +1,18 @@
 Farming_TR = {
   -- vegetables name (type of seed)
   Farming_Bean = "Fasulye",
-  Farming_BellPepper = "Dolmalık Biber",
-  Farming_Eggplant = "Patlıcan",
-  Farming_Grape = "Üzüm",
-  Farming_Leek = "Pırasa",
+  Farming_BellPepper = "DolmalÄ±k Biber",
+  Farming_Eggplant = "PatlÄ±can",
+  Farming_Grape = "ÃœzÃ¼m",
+  Farming_Leek = "PÄ±rasa",
   Farming_Lettuce = "Marul",
-  Farming_Onion = "Soğan",
+  Farming_Onion = "SoÄŸan",
   Farming_Pea = "Bezelye",
-  Farming_Peanut = "Yer Fıstığı",
-  Farming_Pumpkin = "Balkabağı",
+  Farming_Peanut = "Yer FÄ±stÄ±ÄŸÄ±",
+  Farming_Pumpkin = "BalkabaÄŸÄ±",
   Farming_Watermelon = "Karpuz",
   Farming_Zucchini = "Kabak",
   Farming_Tooltip_TrellisRequired = "Bitki Kafesi Gerekli: ",
-  Farming_Corn = "Mısır",
+  Farming_Corn = "MÄ±sÄ±r",
 
 }

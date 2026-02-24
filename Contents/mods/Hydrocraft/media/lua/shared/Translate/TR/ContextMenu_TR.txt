@@ -1,6 +1,6 @@
 ContextMenu_TR = {
 	ContextMenu_Sow_Trellis_Seed = "Desteklenen Tohumlar",
-	ContextMenu_Sniff = "Burnuna Çek",
+	ContextMenu_Sniff = "Burnuna Ã‡ek",
 	ContextMenu_Inject = "Enjekte Et",
 
 }

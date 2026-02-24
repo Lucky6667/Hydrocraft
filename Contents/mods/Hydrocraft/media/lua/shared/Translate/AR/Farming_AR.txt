@@ -10,7 +10,7 @@ Farming_AR = {
 	Farming_Pea = "Guisante",
 	Farming_Peanut = "Cacahuate",
 	Farming_Pumpkin = "Calabaza",
-	Farming_Watermelon = "Sandía",
-	Farming_Zucchini = "Calabacín",
+	Farming_Watermelon = "SandÃ­a",
+	Farming_Zucchini = "CalabacÃ­n",
 	Farming_Tooltip_TrellisRequired = "Se requiere kit de espaldera: ",
 }

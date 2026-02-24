@@ -98,7 +98,7 @@ recipe Pack Pallet of Grey Bricks
     {
     	HCGreybrick=100,
     	HCRopethick,
-	HCWoodenpallet,
+        HCWoodenpallet,
     	CanBeDoneFromFloor:true,
     	Result:HCGreybrickbox,
     	Time:20.0,
@@ -118,7 +118,7 @@ recipe Pack Pallet of Red Bricks
     {
     	HCRedbrick=100,
     	HCRopethick,
-	HCWoodenpallet,
+        HCWoodenpallet,
     	CanBeDoneFromFloor:true,
     	Result:HCRedbrickbox,
     	Time:20.0,
@@ -136,43 +136,42 @@ recipe Unpack Pallet of Red Bricks
 
 recipe Make Grey Bricks
     {
-    HCGreyclay=5,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    OnTest:HCNearKiln,
-    CanBeDoneFromFloor:true,
-    Result:HCGreybrick=5,
-    NeedToBeLearn:true,
-    Time:100,
-    Category:Masonry,
-    OnCreate:getBurned,
-    OnGiveXP:Recipe.OnGiveXP.None,
+        HCGreyclay=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        OnTest:HCNearKiln,
+        CanBeDoneFromFloor:true,
+        Result:HCGreybrick=5,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Masonry,
+        OnCreate:getBurned,
+        OnGiveXP:Recipe.OnGiveXP.None,
     }
 
 recipe Make Red Bricks
     {
-    HCRedclay=5,
-   	Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    OnTest:HCNearKiln,
-    CanBeDoneFromFloor:true,
-    Result:HCRedbrick=5,
-    NeedToBeLearn:true,
-    Time:100,
-    Category:Masonry,
-    OnCreate:getBurned,
-    OnGiveXP:Recipe.OnGiveXP.None,
+        HCRedclay=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        OnTest:HCNearKiln,
+        CanBeDoneFromFloor:true,
+        Result:HCRedbrick=5,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Masonry,
+        OnCreate:getBurned,
+        OnGiveXP:Recipe.OnGiveXP.None,
     }
-
 
 recipe Make Refractory Brick
     {
-	keep HCSpatula/HCWoodenspatula/Spatula,
-	keep BucketEmpty/HCWoodenbucket,
-	HCGypsumpowder,
-	Sandbag,
-	Water,
-	HCBlockmold,
+        keep HCSpatula/HCWoodenspatula/Spatula,
+        keep BucketEmpty/HCWoodenbucket,
+        HCGypsumpowder,
+        Sandbag,
+        Water,
+        HCBlockmold,
     	Result:HCRefractorybrick,
     	NeedToBeLearn:true,
     	Time:100,
@@ -180,11 +179,9 @@ recipe Make Refractory Brick
     	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
-
-
 recipe Make Concrete Ingot
     {
-    	Gravelbag,
+    	Gravelbag/HCWoodenbucketgravel,
     	HCBonepowder,
     	HCGreyclay,
     	Charcoal,
@@ -202,10 +199,49 @@ recipe Make Concrete Ingot
     	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
+recipe Make Concrete Ingot
+    {
+    	Gravelbag=4,
+    	HCBonepowder=4,
+    	HCGreyclay=4,
+    	Charcoal,
+    	[Recipe.GetItemTypes.StartFire],
+    	HCIngotmoldHuge,
+    	[Recipe.GetItemTypes.BlacksmithTongs],
+    	keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+    	OnTest:HCNearKiln,
+    	CanBeDoneFromFloor:true,
+    	Result:HCConcreteingot=4,
+    	NeedToBeLearn:true,
+    	Time:300,
+    	Category:Masonry,
+    	OnCreate:getBurned,
+    	OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+recipe Make Concrete Ingot
+    {
+    	HCWoodenbucketgravel=4,
+    	HCBonepowder=4,
+    	HCGreyclay=4,
+    	Charcoal,
+    	[Recipe.GetItemTypes.StartFire],
+    	HCIngotmoldHuge,
+    	[Recipe.GetItemTypes.BlacksmithTongs],
+    	keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+    	OnTest:HCNearKiln,
+    	CanBeDoneFromFloor:true,
+    	Result:HCConcreteingot=4,
+    	NeedToBeLearn:true,
+    	Time:300,
+    	Category:Masonry,
+    	OnCreate:getBurned,
+    	OnGiveXP:Recipe.OnGiveXP.None,
+    }
 
 recipe Make Concrete Block
     {
-	[Recipe.GetItemTypes.BucketConcrete],
+        [Recipe.GetItemTypes.BucketConcrete],
     	HCBlockmold,
     	CanBeDoneFromFloor:true,
     	Result:HCConcreteblock,
@@ -218,7 +254,7 @@ recipe Make Concrete Block
 recipe Make Hempcrete Block
     {
 	HCPlantfibers=3,
-	[Recipe.GetItemTypes.BucketConcrete],
+        [Recipe.GetItemTypes.BucketConcrete],
     	HCBlockmold,
     	CanBeDoneFromFloor:true,
     	Result:HCHempcreteblock,
@@ -231,7 +267,7 @@ recipe Make Hempcrete Block
 recipe Make Leadcrete Block
     {
 	HCLeadpowder=3,
-	[Recipe.GetItemTypes.BucketConcrete],
+        [Recipe.GetItemTypes.BucketConcrete],
     	HCBlockmold,
     	CanBeDoneFromFloor:true,
     	Result:HCLeadcreteblock,

@@ -28,5 +28,29 @@ recipe Recycle Gold
     OnGiveXP:HCWelding_OnGiveXP,
     }
 
+recipe Grind Gold Powder
+    {
+    Locket=2,
+    keep HCGrindstone,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldpowder,
+    NeedToBeLearn:true,
+    Time:300,
+    Category:Smithing,
+    OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Grind Gold Powder
+    {
+    Bracelet_BangleLeftGold/Bracelet_BangleRightGold/WristWatch_Right_ClassicGold/WristWatch_Right_ClassicGold/NacklaceLong_Gold/NacklaceLong_GoldDiamond,
+    keep HCGrindstone,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldpowder,
+    NeedToBeLearn:true,
+    Time:300,
+    Category:Smithing,
+    OnGiveXP:HCWelding_OnGiveXP,
+    }
+
 
 }

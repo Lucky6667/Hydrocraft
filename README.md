@@ -44,7 +44,7 @@ Hydrocraft dramatically expands the crafting system in Project Zomboid, introduc
 1. Subscribe via Steam Workshop (if published)
 2. OR manually copy the `Hydrocraft` folder to your Project Zomboid mods directory:
    ```
-   [USER]/mods/Hydrocraft
+   [USER]/Zomboid/mods/Hydrocraft
    ```
 
 ## Compatibility

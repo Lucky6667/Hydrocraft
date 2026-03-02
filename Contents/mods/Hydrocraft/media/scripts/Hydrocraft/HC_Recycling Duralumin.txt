@@ -5,21 +5,21 @@ module Hydrocraft
         Base
 
     }
-
+	
 /************************RECIPES************************/
 
-recipe Recycle Electrum
+recipe Recycle Duralumin
     {
-        SkillRequired:MetalWelding=3,
-        ElectricWire=5,
+        SkillRequired:MetalWelding=6,
+        HCDuralumincase,
         Charcoal,
         [Recipe.GetItemTypes.StartFire],
-        HCIngotmold,
-        [Recipe.GetItemTypes.BlacksmithTongs],
+        HCIngotmold=2,
+        [Recipe.GetItemTypes.BlacksmithTongs]=2,
         keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        keep HCFurnace2/HCBlastfurnace2,
         CanBeDoneFromFloor:true,
-        Result:HCElectrumingot,
+        Result:HCAluminumingot=2,
         NeedToBeLearn:true,
         Time:600,
         Category:Smithing,

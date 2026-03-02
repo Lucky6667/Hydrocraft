@@ -854,6 +854,15 @@ item HCZedskin
 		Icon		=	HCZedskin,
 	}
 
+item HCZedlimedskin
+	{
+		Type 		= 	Normal,
+        	DisplayName 	= 	Limed Skin,
+        	Weight 		= 	0.1,
+		Icon		=	HCZedlimedskin,
+		DisplayCategory          =   CraftTailor,
+	}
+
 item HCZedskindried
 	{
 		Type 		= 	Normal,
@@ -1185,34 +1194,34 @@ recipe Skin Corpse
 	keep [Recipe.GetItemTypes.SharpKnife],
 	CanBeDoneFromFloor:true,
 	Result:HCZedmeat,
-    	NeedToBeLearn:true,
+	NeedToBeLearn:true,
 	Time:50,
-    	Category:Hunting,
+	Category:Hunting,
 	OnCreate:recipe_hcskinzed,
-    	OnGiveXP:Recipe.OnGiveXP.None,
+	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
 recipe Make Drying Frame
     {
-    WoodenStick=6,
-	Rope=2,
-   	Result:HCDryingframe,
-    NeedToBeLearn:true,
-    Time:15,
-    Category:Hunting,
-    OnGiveXP:HCWoodwork_OnGiveXP,
+		WoodenStick=6,
+		Rope=2,
+		Result:HCDryingframe,
+		NeedToBeLearn:true,
+		Time:15,
+		Category:Hunting,
+		OnGiveXP:HCWoodwork_OnGiveXP,
     }
 
 recipe Dry Fur
     {
-    HCAnimalfur,
-    keep HCDryingframe,
-    CanBeDoneFromFloor:true,
-    Result:HCAnimalfurdried,
-    NeedToBeLearn:true,
-    Time:500,
-    Category:Hunting,
-    OnGiveXP:HCTailoring_OnGiveXP,
+		HCAnimalfur,
+		keep HCDryingframe,
+		CanBeDoneFromFloor:true,
+		Result:HCAnimalfurdried,
+		NeedToBeLearn:true,
+		Time:500,
+		Category:Hunting,
+		OnGiveXP:HCTailoring_OnGiveXP,
     }
 
 recipe Dry Hide
@@ -1575,7 +1584,7 @@ recipe Cut Dry Fur
 
 recipe Cut Dry Fur
     {
-    	HCHidedriedboar/HCHidedrieddeer/HCHidedriedbearblack/HCHidedriedpig/HCHidedrieddonkey/HCHidedriedcougar,
+    	HCZedskindried/HCHidedriedboar/HCHidedrieddeer/HCHidedriedbearblack/HCHidedriedpig/HCHidedrieddonkey/HCHidedriedcougar,
         keep HCTailoringbench2,
     	CanBeDoneFromFloor:true,
         Result:HCAnimalfurdried=6,
@@ -1816,6 +1825,66 @@ recipe Make Rose Tanning Oil
     OnGiveXP:HCCooking_OnGiveXP,
     }
 
+recipe Cut Limed Hide
+    {
+        HCHidedlimedriedrabbit/HCHidelimedsquirrel/HCHidelimedgroundhog/HCHidelimedmuskrat/HCHidelimeddog/HCHidelimedcat,
+        keep HCTailoringbench2,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurlime,
+    	NeedToBeLearn:true,
+        Time:10,
+    	Category:Weaving,
+    	OnGiveXP:HCTailoring_OnGiveBitXP,
+    }
+
+recipe Cut Limed Hide
+    {
+    	HCHidelimednutria/HCHidelimedfox/HCHidelimedopossum/HCHidelimedskunk/HCHidelimedraccoon/HCHidelimedarmadillo,
+        keep HCTailoringbench2,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurlime=2,
+    	NeedToBeLearn:true,
+        Time:20,
+    	Category:Weaving,
+    	OnGiveXP:HCTailoring_OnGiveBitXP,
+    }
+
+recipe Cut Limed Hide
+    {
+    	HCHidelimedbeaver/HCHidelimedsheep/HCHidelimedgoat,
+        keep HCTailoringbench2,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurlime=4,
+    	NeedToBeLearn:true,
+        Time:40,
+    	Category:Weaving,
+    	OnGiveXP:HCTailoring_OnGiveBitXP,
+    }
+
+recipe Cut Limed Hide
+    {
+    	HCZedlimedskin/HCHidelimedboar/HCHidelimeddeer/HCHidelimedbearblack/HCHidelimedpig/HCHidelimeddonkey/HCHidelimedcougar,
+        keep HCTailoringbench2,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurlime=6,
+    	NeedToBeLearn:true,
+        Time:60,
+    	Category:Weaving,
+    	OnGiveXP:HCTailoring_OnGiveBitXP,
+    }
+
+recipe Cut Limed Hide
+    {
+    	HCHidedriedbear/HCHidedriedcow/HCHidedriedbull/HCHidedriedhorse,
+        keep HCTailoringbench2,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurlime=8,
+    	NeedToBeLearn:true,
+        Time:80,
+    	Category:Weaving,
+    	OnGiveXP:HCTailoring_OnGiveBitXP,
+    }
+
 recipe Make Limed Hide
     {
     HCWoodenbucketlime,
@@ -1858,8 +1927,6 @@ recipe Make Camo Leather
     OnGiveXP:HCTailoring_OnGiveXP,
 	}
 
-
-
 recipe Make Fine Leather
     {
     HCWoodenbucketrose,
@@ -1873,30 +1940,13 @@ recipe Make Fine Leather
     OnGiveXP:HCTailoring_OnGiveXP,
     }
 
-
 recipe Make Hardened Leather
     {
     keep HCClaycauldron/HCCauldroniron,
     Charcoal,
     [Recipe.GetItemTypes.StartFire],
     HCLeather=3,
-    HCBeeswax=2,
-    Water,
-    Result:HCLeatherhard,
-    CanBeDoneFromFloor:true,
-    NeedToBeLearn:true,
-    Time:15,
-    Category:Weaving,
-    OnGiveXP:HCTailoring_OnGiveXP,
-    }
-
-recipe Make Hardened Leather
-    {
-    keep HCClaycauldron/HCCauldroniron,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCLeather=3,
-    HCCandleberrywax=2,
+    HCWaxrecycled/HCBeeswax/HCCandleberrywax=2,
     Result:HCLeatherhard,
     CanBeDoneFromFloor:true,
     NeedToBeLearn:true,

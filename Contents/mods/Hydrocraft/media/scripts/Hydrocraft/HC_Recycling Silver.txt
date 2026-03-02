@@ -7,24 +7,213 @@ module Hydrocraft
     }
 
 /************************RECIPES************************/
-/*
+
+
 recipe Recycle Silver
     {
-    SkillRequired:MetalWelding=2,
-    Ring=10,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCSilveringot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=3,
+        NecklaceLong_Silver/NecklaceLong_SilverDiamond/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilveringot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
-*/
+
+recipe Recycle Silver
+    {
+        SkillRequired:MetalWelding=3,
+        Bracelet_BangleLeftSilver/Bracelet_BangleRightSilver/Necklace_Silver/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_SilverSapphire/Earring_LoopLrg_Silver=2,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilveringot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Silver
+    {
+        SkillRequired:MetalWelding=3,
+        Bracelet_ChainLeftSilver/Bracelet_ChainRightSilver/Earring_LoopMed_Silver=4,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilveringot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Silver
+    {
+        SkillRequired:MetalWelding=3,
+        BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Earring_Stud_Silver/Ring_Left_RingFinger_SilverRuby/Ring_Right_MiddleFinger_SilverRuby/Ring_Left_MiddleFinger_SilverRuby/Ring_Right_RingFinger_SilverRuby/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top=10,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilveringot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Silver
+    {
+        SkillRequired:MetalWelding=2,
+        HCCoinsilver=20,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilveringot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Make Silver Powder
+    {
+        OnTest:HCNearGrindstone,
+        NecklaceLong_Silver/NecklaceLong_SilverDiamond/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        NecklaceLong_Silver/NecklaceLong_SilverDiamond/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        OnTest:HCNearGrindstone,
+        Bracelet_BangleLeftSilver/Bracelet_BangleRightSilver/Necklace_Silver/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_SilverSapphire/Earring_LoopLrg_Silver=2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        Bracelet_BangleLeftSilver/Bracelet_BangleRightSilver/Necklace_Silver/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_SilverSapphire/Earring_LoopLrg_Silver=2,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        OnTest:HCNearGrindstone,
+        Bracelet_ChainLeftSilver/Bracelet_ChainRightSilver/Earring_LoopMed_Silver=4,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        Bracelet_ChainLeftSilver/Bracelet_ChainRightSilver/Earring_LoopMed_Silver=4,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        OnTest:HCNearGrindstone,
+        BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Earring_Stud_Silver/Ring_Left_RingFinger_SilverRuby/Ring_Right_MiddleFinger_SilverRuby/Ring_Left_MiddleFinger_SilverRuby/Ring_Right_RingFinger_SilverRuby/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top=10,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Earring_Stud_Silver/Ring_Left_RingFinger_SilverRuby/Ring_Right_MiddleFinger_SilverRuby/Ring_Left_MiddleFinger_SilverRuby/Ring_Right_RingFinger_SilverRuby/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top=10,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCCoinsilver=20
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
 }

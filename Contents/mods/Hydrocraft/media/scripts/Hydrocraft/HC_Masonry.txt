@@ -94,7 +94,7 @@ module Hydrocraft
         Time:100,
         Category:Masonry,
         OnCreate:getBurned,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveBitXP,
     }
     recipe Make Red Bricks
     {
@@ -108,7 +108,7 @@ module Hydrocraft
         Time:100,
         Category:Masonry,
         OnCreate:getBurned,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveBitXP,
     }
     recipe Make Refractory Brick
     {
@@ -122,11 +122,12 @@ module Hydrocraft
         NeedToBeLearn:true,
         Time:100,
         Category:Masonry,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveBitXP,
     }
 
 /************************RECIPES - CONCRETE & BLOCKS************************/
-    recipe Make Concrete Ingot
+    
+recipe Make Concrete Ingot
     {
         Gravelbag/HCWoodenbucketgravel,
         HCBonepowder,
@@ -143,11 +144,12 @@ module Hydrocraft
         Time:100,
         Category:Masonry,
         OnCreate:getBurned,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveTinyXP,
     }
-    recipe Make Concrete Ingot
+
+recipe Make Concrete Ingot
     {
-        Gravelbag=4,
+        Gravelbag/HCWoodenbucketgravel=4,
         HCBonepowder=4,
         HCGreyclay=4,
         Charcoal,
@@ -162,28 +164,10 @@ module Hydrocraft
         Time:300,
         Category:Masonry,
         OnCreate:getBurned,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveMoreXP,
     }
-    recipe Make Concrete Ingot
-    {
-        HCWoodenbucketgravel=4,
-        HCBonepowder=4,
-        HCGreyclay=4,
-        Charcoal,
-        [Recipe.GetItemTypes.StartFire],
-        HCIngotmoldHuge,
-        [Recipe.GetItemTypes.BlacksmithTongs],
-        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
-        OnTest:HCNearKiln,
-        CanBeDoneFromFloor:true,
-        Result:HCConcreteingot=4,
-        NeedToBeLearn:true,
-        Time:300,
-        Category:Masonry,
-        OnCreate:getBurned,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-    recipe Make Concrete Block
+
+recipe Make Concrete Block
     {
         [Recipe.GetItemTypes.BucketConcrete],
         HCBlockmold,
@@ -192,9 +176,10 @@ module Hydrocraft
         NeedToBeLearn:true,
         Time:100,
         Category:Masonry,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveTinyXP,
     }
-    recipe Make Hempcrete Block
+
+recipe Make Hempcrete Block
     {
         HCPlantfibers=3,
         [Recipe.GetItemTypes.BucketConcrete],
@@ -204,9 +189,10 @@ module Hydrocraft
         NeedToBeLearn:true,
         Time:100,
         Category:Masonry,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveTinyXP,
     }
-    recipe Make Leadcrete Block
+
+recipe Make Leadcrete Block
     {
         HCLeadpowder=3,
         [Recipe.GetItemTypes.BucketConcrete],
@@ -216,7 +202,7 @@ module Hydrocraft
         NeedToBeLearn:true,
         Time:100,
         Category:Masonry,
-        OnGiveXP:Recipe.OnGiveXP.None,
+        OnGiveXP:HCWelding_OnGiveTinyXP,
     }
 
 /************************RECIPES - PACKAGING & PALLETS************************/

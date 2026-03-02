@@ -11,46 +11,209 @@ module Hydrocraft
 
 recipe Recycle Gold
     {
-    SkillRequired:MetalWelding=3,
-    Locket=2,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCGoldingot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=3,
+        NecklaceLong_Gold/NecklaceLong_GoldDiamond,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldingot,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
-recipe Grind Gold Powder
+recipe Recycle Gold
     {
-    Locket=2,
-    keep HCGrindstone,
-    CanBeDoneFromFloor:true,
-    Result:HCGoldpowder,
-    NeedToBeLearn:true,
-    Time:300,
-    Category:Smithing,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=3,
+        Locket/Bracelet_BangleLeftGold/Bracelet_BangleRightGold/WristWatch_Left_ClassicGold/WristWatch_Right_ClassicGold/Necklace_Gold/Necklace_GoldDiamond/Necklace_GoldRuby/Earring_LoopLrg_Gold=2,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldingot,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
-recipe Grind Gold Powder
+recipe Recycle Gold
     {
-    Bracelet_BangleLeftGold/Bracelet_BangleRightGold/WristWatch_Right_ClassicGold/WristWatch_Right_ClassicGold/NacklaceLong_Gold/NacklaceLong_GoldDiamond,
-    keep HCGrindstone,
-    CanBeDoneFromFloor:true,
-    Result:HCGoldpowder,
-    NeedToBeLearn:true,
-    Time:300,
-    Category:Smithing,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=3,
+        Bracelet_ChainLeftGold/Bracelet_ChainRightGold/Earring_LoopMed_Gold=4,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldingot,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
+recipe Recycle Gold
+    {
+        SkillRequired:MetalWelding=3,
+        BellyButton_DangleGold/BellyButton_DangleGoldRuby/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond/Ring_Left_RingFinger_GoldDiamond/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Earring_Stud_Gold/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top=10,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldingot,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Gold
+    {
+        SkillRequired:MetalWelding=3,
+        HCCoingold=20,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldingot,
+        NeedToBeLearn:true,
+        Time:100,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Make Gold Powder
+    {
+        OnTest:HCNearGrindstone,
+        NecklaceLong_Gold/NecklaceLong_GoldDiamond,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        NecklaceLong_Gold/NecklaceLong_GoldDiamond,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        OnTest:HCNearGrindstone,
+        Locket/Bracelet_BangleLeftGold/Bracelet_BangleRightGold/WristWatch_Left_ClassicGold/WristWatch_Right_ClassicGold/Necklace_Gold/Necklace_GoldDiamond/Necklace_GoldRuby/Earring_LoopLrg_Gold=2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        Locket/Bracelet_BangleLeftGold/Bracelet_BangleRightGold/WristWatch_Left_ClassicGold/WristWatch_Right_ClassicGold/Necklace_Gold/Necklace_GoldDiamond/Necklace_GoldRuby/Earring_LoopLrg_Gold=2,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        OnTest:HCNearGrindstone,
+        Bracelet_ChainLeftGold/Bracelet_ChainRightGold/Earring_LoopMed_Gold=4,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        Bracelet_ChainLeftGold/Bracelet_ChainRightGold/Earring_LoopMed_Gold=4,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        OnTest:HCNearGrindstone,
+        BellyButton_DangleGold/BellyButton_DangleGoldRuby/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond/Ring_Left_RingFinger_GoldDiamond/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Earring_Stud_Gold/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top=10,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:500,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        BellyButton_DangleGold/BellyButton_DangleGoldRuby/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond/Ring_Left_RingFinger_GoldDiamond/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Earring_Stud_Gold/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top=10,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCCoingold=20,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
 
 }

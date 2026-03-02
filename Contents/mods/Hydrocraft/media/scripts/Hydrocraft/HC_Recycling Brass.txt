@@ -5,16 +5,18 @@ module Hydrocraft
         Base
     }
 
+/************************ITEMS************************/
+
 item HCBrassscrap
     {
         Weight    		=    	0.1,
         Type    		=    	Normal,
-        DisplayName    		=    	Scrap Brass,
+        DisplayName    	=    	Scrap Brass,
         Icon    		=    	HCBrassscrap,
-		DisplayCategory = CraftMet,
+		DisplayCategory = 		CraftMet,
     }
 	
-
+/************************RECIPES************************/
 	
 recipe Recycle Brass
     {
@@ -29,7 +31,26 @@ recipe Recycle Brass
     	CanBeDoneFromFloor:true,
     	Result:HCBrassingot,
     	NeedToBeLearn:true,
-    	Time:1000,
+    	Time:800,
+    	Category:Smithing,
+    	OnCreate:getBurned,
+    	OnGiveXP:HCWelding_OnGiveXP,
+    }
+	
+	recipe Recycle Brass
+    {
+    	SkillRequired:MetalWelding=7,
+    	HCBrassscrap=5,
+    	Charcoal,
+    	[Recipe.GetItemTypes.StartFire],
+    	HCIngotmold,
+    	[Recipe.GetItemTypes.BlacksmithTongs],
+    	keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+    	keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+    	CanBeDoneFromFloor:true,
+    	Result:HCBrassingot,
+    	NeedToBeLearn:true,
+    	Time:800,
     	Category:Smithing,
     	OnCreate:getBurned,
     	OnGiveXP:HCWelding_OnGiveXP,

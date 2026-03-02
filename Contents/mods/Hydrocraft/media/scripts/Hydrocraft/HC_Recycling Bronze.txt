@@ -10,21 +10,40 @@ module Hydrocraft
 
 recipe Recycle Bronze
     {
-    SkillRequired:MetalWelding=2,
-    Doorknob=2,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCBronzeingot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=2,
+        Doorknob=2,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCBronzeingot,
+        NeedToBeLearn:true,
+        Time:600,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Bronze
+    {
+        SkillRequired:MetalWelding=2,
+        HCFishhookbronze=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCBronzeingot,
+        NeedToBeLearn:true,
+        Time:600,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 }

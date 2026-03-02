@@ -8,29 +8,10 @@ module Hydrocraft
 
 /************************RECIPES************************/
 
-recipe Recycle Copper
+recipe Recycle Zinc
     {
         SkillRequired:MetalWelding=1,
-        HCCoppersheetlarge/HCElectromotor/HCCopperrod,
-        Charcoal,
-        [Recipe.GetItemTypes.StartFire],
-        HCIngotmold=2,
-        [Recipe.GetItemTypes.BlacksmithTongs]=2,
-        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-        CanBeDoneFromFloor:true,
-        Result:HCCopperingot=2,
-        NeedToBeLearn:true,
-        Time:400,
-        Category:Smithing,
-        OnCreate:getBurned,
-        OnGiveXP:HCWelding_OnGiveMoreXP,
-    }
-
-recipe Recycle Copper
-    {
-        SkillRequired:MetalWelding=1,
-        HCCoppersheet/HCCopperpipe/HCKettlecopper,
+        HCWirezinc=5,
         Charcoal,
         [Recipe.GetItemTypes.StartFire],
         HCIngotmold,
@@ -38,75 +19,18 @@ recipe Recycle Copper
         keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
         keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
         CanBeDoneFromFloor:true,
-        Result:HCCopperingot,
+        Result:HCZincingot,
         NeedToBeLearn:true,
-        Time:200,
+        Time:300,
         Category:Smithing,
         OnCreate:getBurned,
         OnGiveXP:HCWelding_OnGiveXP,
     }
 
-recipe Recycle Copper
+recipe Recycle Zinc
     {
-        SkillRequired:MetalWelding=1,
-        HCMugcopper=3,
-        Charcoal,
-        [Recipe.GetItemTypes.StartFire],
-        HCIngotmold,
-        [Recipe.GetItemTypes.BlacksmithTongs],
-        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-        CanBeDoneFromFloor:true,
-        Result:HCCopperingot,
-        NeedToBeLearn:true,
-        Time:200,
-        Category:Smithing,
-        OnCreate:getBurned,
-        OnGiveXP:HCWelding_OnGiveXP,
-    }
-
-recipe Recycle Copper
-    {
-        SkillRequired:MetalWelding=1,
-        HCWirecopper/HCCoppercablered/HCCoppercablestriped/HCCablecopper/HCFishhookcopper=5,
-        Charcoal,
-        [Recipe.GetItemTypes.StartFire],
-        HCIngotmold,
-        [Recipe.GetItemTypes.BlacksmithTongs],
-        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-        CanBeDoneFromFloor:true,
-        Result:HCCopperingot,
-        NeedToBeLearn:true,
-        Time:200,
-        Category:Smithing,
-        OnCreate:getBurned,
-        OnGiveXP:HCWelding_OnGiveXP,
-    }
-
-recipe Recycle Copper
-    {
-        SkillRequired:MetalWelding=1,
-        ElectronicsScrap/HCCircuitboardpieces=10,
-        Charcoal,
-        [Recipe.GetItemTypes.StartFire],
-        HCIngotmold,
-        [Recipe.GetItemTypes.BlacksmithTongs],
-        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-        CanBeDoneFromFloor:true,
-        Result:HCCopperingot,
-        NeedToBeLearn:true,
-        Time:200,
-        Category:Smithing,
-        OnCreate:getBurned,
-        OnGiveXP:HCWelding_OnGiveXP,
-    }
-
-recipe Recycle Copper
-    {
-        SkillRequired:MetalWelding=1,
-        HCCoincopper=20,
+        SkillRequired:MetalWelding=7,
+        HCHalfdollar=20,
         Charcoal,
         [Recipe.GetItemTypes.StartFire],
         HCIngotmold,
@@ -114,12 +38,101 @@ recipe Recycle Copper
         keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
         keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
         CanBeDoneFromFloor:true,
-        Result:HCCopperingot,
+        Result:HCZincingot,
         NeedToBeLearn:true,
-        Time:200,
+        Time:300,
         Category:Smithing,
         OnGiveXP:HCWelding_OnGiveXP,
     }
 
+recipe Recycle Zinc
+    {
+        SkillRequired:MetalWelding=7,
+        HCDollar=40,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCZincingot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Zinc
+    {
+        SkillRequired:MetalWelding=7,
+        HCQuarter=60,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCZincingot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Zinc
+    {
+        SkillRequired:MetalWelding=7,
+        HCNickel=80,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCZincingot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Zinc
+    {
+        SkillRequired:MetalWelding=7,
+        HCPenny=100,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCZincingot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Zinc
+    {
+        SkillRequired:MetalWelding=7,
+        HCDime=120,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCOvenmitts,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCZincingot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
 
 }

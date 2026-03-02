@@ -14,110 +14,104 @@ item HCAluminumscrap
         Type    		=    	Normal,
         DisplayName    	=       Scrap Aluminum,
         Icon    		=    	HCAluminumscrap,
-		DisplayCategory = CraftMet,
+		DisplayCategory =       CraftMet,
     }
-
-/************************ITEMS************************/
 
 /************************RECIPES************************/
 
-
-
 recipe Recycle Aluminum
     {
-    SkillRequired:MetalWelding=6,
-    HCAluminiumbat/HCWeldingtankempty/SheetMetal,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCAluminumingot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
-    }  
-
-
-recipe Recycle Aluminum
-    {
-    SkillRequired:MetalWelding=6,
-    UnusableMetal/TentPeg=2,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCAluminumingot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
-    }
-
-
-recipe Recycle Aluminum
-    {
-    SkillRequired:MetalWelding=6,
-    destroy Extinguisher,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCAluminumingot,
-    NeedToBeLearn:true,
-    Time:1000,\
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
-    }  
-
-recipe Recycle Aluminum
-    {
-    SkillRequired:MetalWelding=6,
-    HCLargesheetmetal,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCAluminumingot=2,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=6,
+        HCLargesheetmetal,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold=2,
+        [Recipe.GetItemTypes.BlacksmithTongs]=2,
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumingot=2,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 recipe Recycle Aluminum
     {
-    SkillRequired:MetalWelding=6,
-    MetalPipe=2,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCAluminumingot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        SkillRequired:MetalWelding=6,
+        destroy Aluminum,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumingot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }  
+
+recipe Recycle Aluminum
+    {
+        SkillRequired:MetalWelding=6,
+        HCAluminiumbat/HCCrutchaluminiumHCWeldingtankempty/SheetMetal,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumingot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }  
+
+recipe Recycle Aluminum
+    {
+        SkillRequired:MetalWelding=6,
+        TentPeg/HCPoptrash/HCEnergydrink2trash/HCPop2trash/HCPop6trash/HCBeercan/HCEnergydrinktrash/HCPop3trash=3,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumingot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Aluminum
+    {
+        SkillRequired:MetalWelding=6,
+        HCWirealuminum/HCFishhookaluminum/HCAluminumscrap=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumingot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 }

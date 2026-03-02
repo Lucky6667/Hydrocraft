@@ -12,89 +12,176 @@ module Hydrocraft
     {
         Weight    		=    	0.1,
         Type    		=    	Normal,
-        DisplayName    		=    	Scrap Rubber,
+        DisplayName    	=    	Scrap Rubber,
         Icon    		=    	HCRubberscrap,
-		DisplayCategory = CraftChem,
+		DisplayCategory =       CraftChem,
     }
-
-/************************ITEMS************************/
 	
 /************************RECIPES************************/
 
 recipe Recycle Rubber
     {
-    OldTire1/OldTire2/OldTire3/NormalTire1/NormalTire2/NormalTire3/ModernTire1/ModernTire2/ModernTire3,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCRubbervulcanized,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Chemistry,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        OldTire1/OldTire2/OldTire3/NormalTire1/NormalTire2/NormalTire3/ModernTire1/ModernTire2/ModernTire3,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold=2,
+        [Recipe.GetItemTypes.BlacksmithTongs]=2,
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubbervulcanized=2,
+        NeedToBeLearn:true,
+        Time:1200,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Rubber
+    {
+        HCRubberbungbox=3,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubbervulcanized,
+        NeedToBeLearn:true,
+        Time:600,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+    recipe Recycle Rubber
+    {
+        HCRubberbunghole=20,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubbervulcanized,
+        NeedToBeLearn:true,
+        Time:600,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+/************************RECIPES************************/
+
+recipe Recycle Rubber
+    {
+        HCRaftrubber,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold=8,
+        [Recipe.GetItemTypes.BlacksmithTongs]=8,
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber=8,
+        NeedToBeLearn:true,
+        Time:3200,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Rubber
+    {
+        destroy HCGardenhose,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold=3,
+        [Recipe.GetItemTypes.BlacksmithTongs]=3,
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber=3,
+        NeedToBeLearn:true,
+        Time:1200,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Rubber
+    {
+        destroy Rubberducky2,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Rubber
+    {
+        HCRubberball/Basketball/HCRubberbelt/Rubberducky,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 
 recipe Recycle Rubber
     {
-    HCRubberball/Basketball,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCRubber,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Chemistry,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        HCBalloonbox/HCRubberhose/HCStamp=3,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
-
 
 recipe Recycle Rubber
     {
-    HCBalloonbox=3,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCRubber,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Chemistry,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
-    }
-
-
-
-recipe Recycle Rubber
-    {
-    HCGardenhose,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold=3,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCRubber=3,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Chemistry,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+        HCRubberscrap/HCRubberbandbox/HCRubberglove=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCRubber,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Chemistry,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 

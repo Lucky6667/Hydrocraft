@@ -1,0 +1,1330 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCHexapowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Hexamethylentetramin Powder,
+        icon            = HCHexapowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCharcoalpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Charcoal Powder,
+        icon            = HCCharcoalpowder,
+		DisplayCategory	= CraftChem,
+    } 
+
+item HCGraphitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Graphite Powder,
+        icon            = HCGraphitepowder,
+		DisplayCategory	= CraftChem,
+    } 
+
+item HCSaltpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Salt Powder,
+        icon            = HCSaltpowder,
+		DisplayCategory	= CookRef,
+    } 
+
+item HCSaltpeterpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Saltpeter Powder,
+        icon            = HCSaltpeterpowder,
+		DisplayCategory	= CookRef,
+    }  
+
+item HCSulphurpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Sulphur Powder,
+        icon            = HCSulphurpowder,
+		DisplayCategory	= CraftAmmo,
+    }
+
+item HCCopperpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Copper Powder,
+        icon            = HCCopperpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCTinpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Tin Powder,
+        icon            = HCTinpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCLeadpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Lead Powder,
+        icon            = HCLeadpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCIronpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Iron Powder,
+        icon            = HCIronpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCMagnetitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Magnetite Powder,
+        icon            = HCMagnetitepowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCMeteoritepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Meteorite Powder,
+        icon            = HCMeteoritepowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCSilverpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Silver Powder,
+        icon            = HCSilverpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCGoldpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Gold Powder,
+        icon            = HCGoldpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCAluminumpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Aluminum Powder,
+        icon            = HCAluminumpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCZincpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Zinc Powder,
+        icon            = HCZincpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCNickelpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Nickel Powder,
+        icon            = HCNickelpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCCobaltpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Cobalt Powder,
+        icon            = HCCobaltpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCChromepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Chrome Powder,
+        icon            = HCChromepowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCTungstenpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Tungsten Powder,
+        icon            = HCTungstenpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCTitaniumpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Titanium Powder,
+        icon            = HCTitaniumpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCPhosphoruspowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Phosphorus Powder,
+        icon            = HCPhosphoruspowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCLithiumpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Lithium Powder,
+        icon            = HCLithiumpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCChalkpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Chalk Powder,
+        icon            = HCChalkpowder,
+		DisplayCategory	= CraftMas,
+    }
+
+item HCFeldsparpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Feldspar Powder,
+        icon            = HCFeldsparpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCAlbitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Albite Powder,
+        icon            = HCAlbitepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCObsidianpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Obsidian Powder,
+        icon            = HCObsidianpowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCLapislazulipowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Lapis Lazuli Powder,
+        icon            = HCLapislazulipowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCAzuritepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Azurite Powder,
+        icon            = HCAzuritepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCJadepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Jade Powder,
+        icon            = HCJadepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCMalachitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Malachite Powder,
+        icon            = HCMalachitepowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCMarblepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Marble Powder,
+        Icon            = HCMarblepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCCalcitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Calcite Powder,
+        Icon            = HCCalcitepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCMagnesiumpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Magnesium Powder,
+        Icon            = HCMagnesiumpowder,
+		DisplayCategory	= CraftMet,
+    }
+
+item HCGypsumpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Gypsum Powder,
+        icon            = HCGypsumpowder,
+		DisplayCategory	= CraftMine,
+    } 
+
+item HCDiatomitepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Diatomite Powder,
+        icon            = HCDiatomitepowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCTronapowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Trona Powder,
+        Icon            = HCTronapowder,
+		DisplayCategory	= CraftMine,
+    }
+
+item HCSilveriodidepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Silver Iodide Powder,
+        Icon            = HCSilveriodidepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCalciumhydroxidpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Calcium Hydroxide Powder,
+        Icon            = HCCalciumhydroxidpowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCalciumoxidpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Calcium Oxide Powder,
+        Icon            = HCCalciumoxidpowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCalciumcarbonatpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Calcium Carbonate Powder,
+        Icon            = HCCalciumcarbonatpowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCopperoxidepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Copper Oxide Powder,
+        Icon            = HCCopperoxidepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCoppersulfatepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Copper Sulfate Powder,
+        Icon            = HCCoppersulfatepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCNickelsulfatepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Nickel Sulfate Powder,
+        Icon            = HCNickelsulfatepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCSodiumcarbonatpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Sodium Carbonate Powder,
+        Icon            = HCSodiumcarbonatpowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCSodiumhydroxidepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Sodium Hydroxide Powder,
+        Icon            = HCSodiumhydroxidepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCSodiumsulfatpowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Sodium Sulfate Powder,
+        Icon            = HCSodiumsulfatpowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCEphedrinepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Ephedrine Powder,
+        icon            = HCEphedrinepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+item HCCalciumchloridepowder
+    {
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Calcium Chloride Powder,
+        Icon            = HCCalciumchloridepowder,
+		DisplayCategory	= CraftChem,
+    }
+
+/************************RECIPES************************/
+
+recipe Make Chalk Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCChalk/HCChalkrock,
+        CanBeDoneFromFloor:true,
+        Result:HCChalkpowder,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Chalk Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCChalk/HCChalkrock,
+        CanBeDoneFromFloor:true,
+        Result:HCChalkpowder=2,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Charcoal Powder
+    {
+        OnTest:HCNearGrindstone,
+        Charcoal,
+        CanBeDoneFromFloor:true,
+        Result:HCCharcoalpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Charcoal Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        Charcoal,
+        CanBeDoneFromFloor:true,
+        Result:HCCharcoalpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Graphite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCGraphite,
+        CanBeDoneFromFloor:true,
+        Result:HCGraphitepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Graphite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCGraphite,
+        CanBeDoneFromFloor:true,
+        Result:HCGraphitepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Saltpeter Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCSaltpeter,
+        CanBeDoneFromFloor:true,
+        Result:HCSaltpeterpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Saltpeter Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCSaltpeter,
+        CanBeDoneFromFloor:true,
+        Result:HCSaltpeterpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Sulphur Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCSulphur,
+        CanBeDoneFromFloor:true,
+        Result:HCSulphurpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Sulphur Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCSulphur,
+        CanBeDoneFromFloor:true,
+        Result:HCSulphurpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWelding_OnGiveBitXP,
+    }
+
+recipe Make Copper Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCCopperore,
+        CanBeDoneFromFloor:true,
+        Result:HCCopperpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Copper Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCCopperore,
+        CanBeDoneFromFloor:true,
+        Result:HCCopperpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Tin Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCTinore,
+        CanBeDoneFromFloor:true,
+        Result:HCTinpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OnGiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Tin Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCTinore,
+        CanBeDoneFromFloor:true,
+        Result:HCTinpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lead Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCLeadore,
+        CanBeDoneFromFloor:true,
+        Result:HCLeadpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lead Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCLeadore,
+        CanBeDoneFromFloor:true,
+        Result:HCLeadpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Iron Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCIronore,
+        CanBeDoneFromFloor:true,
+        Result:HCIronpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Iron Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCIronore,
+        CanBeDoneFromFloor:true,
+        Result:HCIronpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Magnetite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCMagnetite,
+        CanBeDoneFromFloor:true,
+        Result:HCMagnetitepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Magnetite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCMagnetite,
+        CanBeDoneFromFloor:true,
+        Result:HCMagnetitepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Meteorite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCMeteorite,
+        CanBeDoneFromFloor:true,
+        Result:HCMeteoritepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Meteorite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCMeteorite,
+        CanBeDoneFromFloor:true,
+        Result:HCMeteoritepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCSilverore,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Silver Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCSilverore,
+        CanBeDoneFromFloor:true,
+        Result:HCSilverpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCGoldore,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gold Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCGoldore,
+        CanBeDoneFromFloor:true,
+        Result:HCGoldpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Aluminum Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCBauxiteore,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Aluminum Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCBauxiteore,
+        CanBeDoneFromFloor:true,
+        Result:HCAluminumpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Zinc Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCZincore,
+        CanBeDoneFromFloor:true,
+        Result:HCZincpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Zinc Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCZincore,
+        CanBeDoneFromFloor:true,
+        Result:HCZincpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Nickel Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCNickelore,
+        CanBeDoneFromFloor:true,
+        Result:HCNickelpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Nickel Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCNickelore,
+        CanBeDoneFromFloor:true,
+        Result:HCNickelpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Cobalt Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCCobaltore,
+        CanBeDoneFromFloor:true,
+        Result:HCCobaltpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Cobalt Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCCobaltore,
+        CanBeDoneFromFloor:true,
+        Result:HCCobaltpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Chrome Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCChromeore,
+        CanBeDoneFromFloor:true,
+        Result:HCChromepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Chrome Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCChromeore,
+        CanBeDoneFromFloor:true,
+        Result:HCChromepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Tungsten Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCTungstenore,
+        CanBeDoneFromFloor:true,
+        Result:HCTungstenpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Tungsten Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCTungstenore,
+        CanBeDoneFromFloor:true,
+        Result:HCTungstenpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+
+recipe Make Titanium Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCTitaniumore,
+        CanBeDoneFromFloor:true,
+        Result:HCTitaniumpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Phosphorus Powder
+    {
+        OnTest:HCNearGrindstone,
+        Matches=15,
+		keep [Recipe.GetItemTypes.SharpKnife],
+        CanBeDoneFromFloor:true,
+        Result:HCPhosphoruspowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Phosphorus Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCBerlinite/HCLapislazuli,
+        Result:HCPhosphoruspowder,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Phosphorus Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCBerlinite/HCLapislazuli,
+        CanBeDoneFromFloor:true,
+        Result:HCPhosphoruspowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lithium Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCLithiumore,
+        Result:HCLithiumpowder,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lithium Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCLithiumore,
+        CanBeDoneFromFloor:true,
+        Result:HCLithiumpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCWeldingMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lapis Lazuli Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCLapislazuli,
+        CanBeDoneFromFloor:true,
+        Result:HCLapislazulipowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Lapis Lazuli Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCLapislazuli,
+        CanBeDoneFromFloor:true,
+        Result:HCLapislazulipowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Azurite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCAzurite,
+        CanBeDoneFromFloor:true,
+        Result:HCAzuritepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Azurite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCAzurite,
+        CanBeDoneFromFloor:true,
+        Result:HCAzuritepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Jade Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCJade,
+        CanBeDoneFromFloor:true,
+        Result:HCJadepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Jade Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCJade,
+        CanBeDoneFromFloor:true,
+        Result:HCJadepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Malachite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCMalachite,
+        CanBeDoneFromFloor:true,
+        Result:HCMalachitepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Malachite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCMalachite,
+        CanBeDoneFromFloor:true,
+        Result:HCMalachitepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Marble Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCMarble,
+        CanBeDoneFromFloor:true,
+        Result:HCMarblepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Marble Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCMarble,
+        CanBeDoneFromFloor:true,
+        Result:HCMarblepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Albite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCAlbite,
+        CanBeDoneFromFloor:true,
+        Result:HCAlbitepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Albite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCAlbite,
+        CanBeDoneFromFloor:true,
+        Result:HCAlbitepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Feldspar Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCFeldspar,
+        CanBeDoneFromFloor:true,
+        Result:HCFeldsparpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Feldspar Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCFeldspar,
+        CanBeDoneFromFloor:true,
+        Result:HCFeldsparpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gypsum Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCGypsum,
+        CanBeDoneFromFloor:true,
+        Result:HCGypsumpowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Gypsum Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCGypsum,
+        CanBeDoneFromFloor:true,
+        Result:HCGypsumpowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Diatomite Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCDiatomite,
+        CanBeDoneFromFloor:true,
+        Result:HCDiatomitepowder,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Diatomite Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCDiatomite,
+        CanBeDoneFromFloor:true,
+        Result:HCDiatomitepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Trona Powder
+    {
+        OnTest:HCNearGrindstone,
+        HCTrona,
+        CanBeDoneFromFloor:true,
+        Result:HCTronapowder,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Trona Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCTrona,
+        CanBeDoneFromFloor:true,
+        Result:HCTronapowder=2,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Grind Solid Fuel Cube
+    {
+        keep MortarPestle/HCLab2,
+        HCSolidfuelcube,
+        CanBeDoneFromFloor:true,
+        Result:HCHexapowder,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Grind Solid Fuel Cube
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCSolidfuelcube,
+        CanBeDoneFromFloor:true,
+        Result:HCHexapowder=2,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Ephedrin Powder
+    {
+        keep HCLab/HCMedicallab,
+        HCEphedrine=15,
+        Result:HCEphedrinepowder,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Ephedrin Powder
+    {
+        keep HCMacerator,
+        PetrolCan,
+        HCEphedrine=15,
+        CanBeDoneFromFloor:true,
+        Result:HCEphedrinepowder=2,
+        NeedToBeLearn:true,
+        Time:50,
+        Category:Chemistry,
+        OngiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Plaster Powder
+    {
+        HCChalkpowder=2,
+        Charcoal,
+        OnTest:HCNearGrindstone,
+        keep [Recipe.GetItemTypes.LeatherGloves],
+        Result:PlasterPowder,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Masonry,
+        OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+recipe Make Concrete Powder
+    {
+    	HCConcreteingot=4,
+    	OnTest:HCNearGrindstone,
+    	CanBeDoneFromFloor:true,
+    	Result:ConcretePowder,
+    	NeedToBeLearn:true,
+    	Time:50,
+    	Category:Masonry,
+    	OnGiveXP:HCMechanics_OnGiveBitXP,
+    }
+
+}
+
+
+
+

@@ -680,7 +680,7 @@ recipe Make Bone Powder
             CanBeDoneFromFloor:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCookingMechanics_OnGiveBitXP,
     	}
 
 recipe Make Bone Powder
@@ -693,7 +693,7 @@ recipe Make Bone Powder
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCookingMechanics_OnGiveBitXP,
     	}
 
 recipe Make Shell Powder
@@ -704,7 +704,7 @@ recipe Make Shell Powder
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCookingMechanics_OnGiveBitXP,
     	}
 
 recipe Make Shell Powder
@@ -717,13 +717,13 @@ recipe Make Shell Powder
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCookingMechanics_OnGiveBitXP,
     	}
 
 recipe Make Gelatin
     	{
     		HCBone=10,
-		HCCheesecloth,
+			HCCheesecloth,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
     		Water,
@@ -733,22 +733,22 @@ recipe Make Gelatin
     		NeedToBeLearn:true,
     		Time:500,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveMoreXP,
     	}
 
 recipe Dry Gelatin
     	{
     		HCGelatin,
-		BakingTray,
+			BakingTray,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
-   		OnTest:HCNearKiln,
+   			OnTest:HCNearKiln,
     		CanBeDoneFromFloor:true,
     		Result:HCGelatinpowder,
     		NeedToBeLearn:true,
     		Time:1000,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveXP,
     	}
 
 recipe Make Glue
@@ -764,13 +764,13 @@ recipe Make Glue
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveXP,
     	}
 
 recipe Make Glue
     	{
     		HCBonepowder=10,
-		HCClayjarsmall,
+			HCClayjarsmall,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
     		Water,
@@ -780,14 +780,14 @@ recipe Make Glue
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveMoreXP,
     	}
 
 recipe Make Wood Glue
     	{
     		HCBonepowder=10,
-		HCWoodglueempty,
-		HCCandleberrywax/HCRefinedbeeswax/HCWaxrecycled,
+			HCWoodglueempty,
+			HCCandleberrywax/HCRefinedbeeswax/HCWaxrecycled,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
     		Water,
@@ -797,14 +797,14 @@ recipe Make Wood Glue
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveMoreXP,
     	}
 
 recipe Make Wood Glue
     	{
     		HCBonepowder=10,
-		HCClayjarsmall,
-		HCCandleberrywax/HCRefinedbeeswax/HCWaxrecycled,
+			HCClayjarsmall,
+			HCCandleberrywax/HCRefinedbeeswax/HCWaxrecycled,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
     		Water,
@@ -814,14 +814,14 @@ recipe Make Wood Glue
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveMoreXP,
     	}
 
 recipe Make Super Glue
     	{
     		HCBonepowder=10,
-		HCGlycerin,
-		HCGumstick/HCGumstick2/HCGumstick3,
+			HCGlycerin,
+			HCGumstick/HCGumstick2/HCGumstick3,
     		Charcoal,
     		[Recipe.GetItemTypes.StartFire],
     		Water,
@@ -831,79 +831,78 @@ recipe Make Super Glue
     		NeedToBeLearn:true,
     		Time:50,
     		Category:Chemistry,
-   	 	OnGiveXP:HCCooking_OnGiveXP,
+   	 		OnGiveXP:HCCooking_OnGiveMoreXP,
     	}
 
 recipe Craft Bone Shiv
 	{
-    		HCBone/HCZombiebones,
+    	HCBone/HCZombiebones,
 		keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],		
 		Result:HCBoneshiv,
 		Sound:PZ_Saw,
-    		NeedToBeLearn:true,
+    	NeedToBeLearn:true,
 		Time:250.0,
-    		Category:Survivalist,
-   	 	OnGiveXP:Recipe.OnGiveXP.None,
+    	Category:Survivalist,
+   	 	OnGiveXP:HCWoodwork_OnGiveTinyXP,
 	}
 
 recipe Craft Bone Dice
 	{
-    		HCBone/HCZombiebones,
+    	HCBone/HCZombiebones,
 		keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],		
 		Result:HCDicebone,
 		Sound:PZ_Saw,
-    		NeedToBeLearn:true,
+    	NeedToBeLearn:true,
 		Time:250.0,
 		Category:Leisure,
-   	 	OnGiveXP:Recipe.OnGiveXP.None,
+   	 	OnGiveXP:HCWoodwork_OnGiveTinyXP,
 	}
 
 recipe Craft Bone Needle
 	{
-
-    HCBone/HCZombiebones,
+		HCBone/HCZombiebones,
 		keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
 		Result:HCBoneneedle,
 		Sound:PZ_Saw,
     	NeedToBeLearn:true,
 		Time:250.0,
     	Category:Survivalist,
-   	 	OnGiveXP:Recipe.OnGiveXP.None,
+   	 	OnGiveXP:HCWoodwork_OnGiveTinyXP,
 	}
 
 
 recipe Carve Knitting Needles
     {
-    HCBone=2,
-    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
-    Result:KnittingNeedles,
-    Sound:PZ_Saw,
-    NeedToBeLearn:true,
-    Time:250.0,
-    Category:Survivalist,
-    OnGiveXP:Recipe.OnGiveXP.None,
+		HCBone=2,
+		keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
+		Result:KnittingNeedles,
+		Sound:PZ_Saw,
+		NeedToBeLearn:true,
+		Time:250.0,
+		Category:Survivalist,
+		OnGiveXP:HCWoodwork_OnGiveTinyXP,
     }  
 
 
 recipe Craft Bone Fishhook
     {
         HCBone/HCZombiebones,
-		    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
-		    Result:HCFishhookbone,
-		    Sound:PZ_Saw,
-    		NeedToBeLearn:true,
-		    Time:250.0,
-    		Category:Survivalist,
-   	 	  OnGiveXP:Recipe.OnGiveXP.None,
+		keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
+		Result:HCFishhookbone,
+		Sound:PZ_Saw,
+		NeedToBeLearn:true,
+		Time:250.0,
+		Category:Survivalist,
+   	 	OnGiveXP:HCWoodwork_OnGiveTinyXP,
 	  }
 
 recipe Roll Bone Dice
     {
-	      HCDicebone,
+	    HCDicebone,
    	    Result:HCDicebone,
-    	  Time:15,
+    	Time:15,
        	OnCreate:rprolld6,
-	      Category:Leisure,
+	    Category:Leisure,
     }
 
 recipe Make Bone Ash
@@ -918,7 +917,7 @@ recipe Make Bone Ash
     	NeedToBeLearn:true,
     	Category:Firecraft,
     	OnCreate:getBurned,
-   	  OnGiveXP:HCCooking_OnGiveXP,
+   	  	OnGiveXP:HCCooking_OnGiveTinyXP,
     }
 
 }

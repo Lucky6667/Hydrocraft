@@ -10,24 +10,79 @@ module Hydrocraft
 
 recipe Recycle Tin
     {
-    SkillRequired:MetalWelding=2,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
-    Charcoal,
+        SkillRequired:MetalWelding=1,
+        HCTinsheetlarge/HCTinrod,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold=2,
+        [Recipe.GetItemTypes.BlacksmithTongs]=2,
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCTiningot=2,
+        NeedToBeLearn:true,
+        Time:400,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
 
-    [Recipe.GetItemTypes.StartFire],
-    HCIngotmold,
-    [Recipe.GetItemTypes.BlacksmithTongs],
-    keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
-    keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
-    CanBeDoneFromFloor:true,
-    Result:HCTiningot,
-    NeedToBeLearn:true,
-    Time:1000,
-    Category:Smithing,
-    OnCreate:getBurned,
-    OnGiveXP:HCWelding_OnGiveXP,
+recipe Recycle Tin
+    {
+        SkillRequired:MetalWelding=1,
+        HCTinsheet,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCTiningot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Tin
+    {
+        SkillRequired:MetalWelding=2,
+        TinCanEmpty/HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty/HCCanbangedupopenempty=3,
+        Charcoal,
+
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCTiningot,
+        NeedToBeLearn:true,
+        Time:300,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
+    }
+
+recipe Recycle Tin
+    {
+        SkillRequired:MetalWelding=1,
+        HCFishhooktin=5,
+        Charcoal,
+        [Recipe.GetItemTypes.StartFire],
+        HCIngotmold,
+        [Recipe.GetItemTypes.BlacksmithTongs],
+        keep [Recipe.GetItemTypes.LeatherGloves]/HCFiresuit,
+        keep HCSmelter2/HCFurnace2/HCBlastfurnace2,
+        CanBeDoneFromFloor:true,
+        Result:HCTiningot,
+        NeedToBeLearn:true,
+        Time:200,
+        Category:Smithing,
+        OnCreate:getBurned,
+        OnGiveXP:HCWelding_OnGiveXP,
     }
 
 }

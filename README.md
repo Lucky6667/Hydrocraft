@@ -84,7 +84,7 @@ Have suggestions, found a bug, or want to help improve Hydrocraft? Feel free to 
 ## Credits
 
 - Original mod creator: robotex140
-- Current maintainer & fork developer: Lucky667
+- Current maintainer & fork developer: Lucky6667
 - Community contributors and testers: 
 
 ## License
